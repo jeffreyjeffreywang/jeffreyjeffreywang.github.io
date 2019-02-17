@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jeffrey Wang</title>
+
+      <link rel="stylesheet" href="css/style.css">
+      <link rel = "stylesheet"
+    href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+      <div id="name">
+        Jeffrey Wang
+      </div>
+
+      <div class="navbar">
+        <a href="#main-about" id="nav-about">About</a>
+        <a href="#main-portfolio" id="nav-portfolio">Portfolio</a>
+        <a href="#main-contact" id="nav-contact">Contact</a>
+      </div>
+    </div>
+
+    <div class="main">
+    <div class="intro">
+      <div class="intro-text" id="intro-text">
+      <center><i>Hey, I'm</i></center>
+      <center><h2>&mdash; JEFFREY WANG &mdash;</h2></center>
+      </div>
+    </div>
+
+    <div id="intro-background">
+    </div>
+
+    <div class="about" id="main-about">
+      <center><h2>&mdash; All about me &mdash;</h2></center>
+      <img src="https://i.imgur.com/TKPv8vH.jpg" id="myself">
+      <p id="text">
+        Hello, I am Jeffrey (Yu Che) Wang, and welcome to my personal website. I am from Taipei, Taiwan. I am studying at the University of Illinois at Urbana-Champaign. I major in Computer Science and minor in Electrical Engineering. I have passion in the field of artificial intelligence, especially computer vision. I am currently working on localizing sound sources in videos with prior knowledge. I am also interested in web development. In my leisure time, I enjoy travelling, snorkelling, working out, and playing basketball.
+      </p>
+    </div>
+
+
+    <div class="portfolio" id="main-portfolio">
+      <center><h2>&mdash; Here's what I've done so far &mdash;<h2><center>
+      <div class="row">
+        <div class="column" id="item1">
+          <div class="content">
+            <img src="https://i.imgur.com/eFjXG67.png">
+            <h5>Sound Source Localization in Videos</h5>
+            <p class="title">
+              Undergraduate Research Assistant, Since Fall 2018
+            </p>
+            <p class="location">
+              Champaign, IL
+            </p>
+            <p class="description">
+              The project is mainly about teaching coumputers to associate visual features with audio features by training a two-stream convolutional neural network. I enhance performance by providing the model with prior knowledge: utilizing image segmentation network to improve consistency among pixels and audio separation algorithms to separate mixed audios.
+            </p>
+
+            <button id="btn" onclick="btnClick()">More</button>
+
+            <!-- The Modal -->
+            <div id="modal">
+
+            <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close" onclick="closeClick()">&times;</span>
+                <p>Coming soon...</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="column" id="item2">
+          <div class="content">
+            <img src="https://i.imgur.com/rezCdSu.jpg">
+            <h5>University of Illinois at Urbana-Champaign</h5>
+            <p class="title">
+              Bachelor of Science, Computer Science, Since Fall 2017
+            </p>
+            <p class="location">
+              Champaign, IL
+            </p>
+            <p class="description">
+              University of Illinois presented diversity of oppotunities. During my undergraduate study, I expand my comfort zone and cultivate leadership. My engagement in hackathons and the Association of Computer Machinery excersied my creativity. Through coursework, I strengthen my programming and mathematical abilities. University of Illinois gifted me the passion of learning and surrounded me with inspiring peers.
+            </p>
+          </div>
+        </div>
+
+        <div class="column" id="item3">
+          <div class="content">
+            <img src="https://i.imgur.com/VJ5HoEm.png">
+            <h5>Domain Transfer using GAN</h5>
+            <p class="title">
+              Summer Research Intern, Summer 2018
+            </p>
+            <p class="location">
+              Taipei, Taiwan
+            </p>
+            <p class="description">
+              This summer internship gives me a peek to computer vision research. Throught the summer, I created a program to transfer human face photos to human face skecthes. Conditional generative adversarial network is used to cope with the lack of training data. Principal component analysis is used to speed up computation. Besides research, I attended group meetings and presented paper reviews. With this experience, I am able to delve more deeply into the field of computer vision.
+            </p>
+          </div>
+        </div>
+
+        <div class="column" id="item4">
+          <div class="content">
+            <img src="https://i.imgur.com/KsPZYLG.jpg">
+            <h5>Science fiction website</h5>
+            <p class="title">
+              Software developer, Since Spring 2019
+            </p>
+            <p class="location">
+              Champaign, IL
+            </p>
+            <p class="description">
+              This is an ongoing project for the course CS411 Database Systems. I work with a group of 3 people to build a social platform and sharing website for science fictions and novels. With online available fictions, we organize a database and a recommendation system for users to search easily. Users can also share their moments reading novels with their friends. This brings the science fiction community together.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="system" id="system">
+      <center><h2>&mdash; This is my system &mdash;</h2><center>
+      <br>
+      <p><i>
+        BUILD YOUR OWN DREAM<br>
+        PURSUE PASSIONS<br>
+        BE SYSTEMATIC, THOUGHTFUL, AND LOVEABLE<br>
+        INVEST IN SIGNIFICANT IDEAS<br>
+        BELIEVE IN CHANGE
+        </i>
+      </p>
+    </div>
+
+       <div class="gallery">
+    <center><h2>&mdash; Learn more about me &mdash;</h2></center>
+      <div id="slide-container">
+        <img class="slides" src="https://i.imgur.com/L8xAQAy.jpg" alt="image1">
+        <img class="slides" src="https://i.imgur.com/iyc2cM9.jpg" alt="image2">
+        <img class="slides" src="https://i.imgur.com/wkdYjRn.jpg" alt="image3">
+        <img class="slides" src="https://i.imgur.com/417YzmC.jpg" alt="image3">
+        <div id="slide-text">
+        </div>
+        <a class="left" onclick="slide(-1)">&#10094;</a>
+        <a class="right" onclick="slide(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <div class="contact" id="main-contact">
+      <video autoplay loop id="vid" muted plays-inline>
+          <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
+<!--           <source src="https://vimeo.com/user95222629/review/317822263/2f3dfaf57f" type="video/mp4"> -->
+      </video>
+      <div id="contact-content">
+      <center><h2>&mdash; Let's get in touch &mdash;</h2><center>
+        <br>
+        <p>
+        Click <a href = "resume.pdf" download>here</a> to download my resume.
+          <br>
+          <a href="https://www.facebook.com/profile.php?id=100002060551701" class = "fa fa-facebook"></a>
+          <a href = "https://github.com/jeffreyjeffreywang" class = "fa fa-github"></a>
+          <a href="https://www.instagram.com/y.c.wang_1998/?hl=zh-tw" class = "fa fa-instagram"></a>
+        </p>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="footer">
+      <font>&copy; Jeffrey Wang 2019</font>
+    </div>
+    </div>
+
+    <script  src="js/index.js"></script>
+
+</body>
+
+</html>
