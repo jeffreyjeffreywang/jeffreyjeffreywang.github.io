@@ -1,3 +1,22 @@
+function scroll_about() {
+  var about = document.getElementById("main-about");
+  about.scrollIntoView( {
+    behavior: "smooth"
+  });
+}
+
+function scroll_portfolio() {
+  document.querySelector('#main-portfolio').scrollIntoView( {
+    behavior: "smooth"
+  });
+}
+
+function scroll_contact() {
+  document.querySelector('#main-contact').scrollIntoView( {
+    behavior: "smooth"
+  });
+}
+
 // Scroll indicator
 window.onscroll = function() {
   var height = window.innerHeight;
@@ -7,7 +26,7 @@ window.onscroll = function() {
   var aboutHeight = document.getElementById("main-about").clientHeight;
   var portfolioHeight = document.getElementById("main-portfolio").clientHeight;
   var contactHeight = document.getElementById("main-contact").clientHeight;
-  
+
   if (document.getElementById("intro-text").getBoundingClientRect().top < 300) {
     document.getElementById("header").style.padding = "0px";
     document.getElementById("name").style.fontSize = "18px";
@@ -26,7 +45,7 @@ window.onscroll = function() {
     document.getElementById("nav-contact").style.color = "white";
   } else if (portfolio <= height && portfolio > -portfolioHeight) {
     document.getElementById("nav-about").style.backgroundColor = "inherit";
-    document.getElementById("nav-about").style.color = "white";    
+    document.getElementById("nav-about").style.color = "white";
     document.getElementById("nav-portfolio").style.backgroundColor = "#eee";
     document.getElementById("nav-portfolio").style.color = "black";
   } else if (contact <= height && contact > 0){
@@ -57,8 +76,8 @@ function slide(n) {
 function showSlide(n) {
   var slides_arr = document.getElementsByClassName("slides");
   if (n >= slides_arr.length) {
-    index = 0;  
-  }  
+    index = 0;
+  }
   if (n < 0) {
     index = slides_arr.length - 1;
   }
